@@ -2,7 +2,7 @@
 /*
   Problem: What is the 10 001st prime number?
   gcc version:4.4.1
-  executed in 0.0477 seconds 
+  executed in: 0.0262s
 */
 
 #include <stdio.h>
@@ -14,13 +14,16 @@ bool is_prime(int n);
 int main(int argc, char** argv)
 {
 	int i;
-	i = 0;
+	i = 1; // 2 is the first prime
 	int next;
 	next = 1;
 	int prime;
 	
 	while(i < 10001){
-		next++;
+		/*
+		  only odd numbers can be prime(and 2), so it is not necessary to verify if even numbers are primes
+		*/
+		next+=2; 
 		if(is_prime(next)){
 			i++;
 			prime = next;
