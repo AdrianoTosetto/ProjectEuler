@@ -7,7 +7,7 @@ public class Problem20 {
 	//Solution in Java for Project Euler number 20 problem
 	public BigDecimal factorial(int n){
 		BigDecimal fat = new BigDecimal("1");
-		for(int i = 2; i < n;i++){
+		for(int i = 2; i <= n;i++){
 			fat = fat.multiply(new BigDecimal(i));
 		}
 		
