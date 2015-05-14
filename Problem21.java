@@ -9,7 +9,7 @@ package kdjsad;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 
-public class Problem3 {
+public class Problem21 {
     
     public ArrayList<Integer> getDivisors(int n){
         ArrayList divisors = new ArrayList<Integer>();
@@ -39,7 +39,7 @@ public class Problem3 {
     }
     public static void main(String[] args){
         int sum = 0;
-        Problem3 p = new Problem3();
+        Problem3 p = new Problem21();
         for(int i = 0; i < 10000;i++){
             for(int j = i; j < 10000;j++){
                 if(p.amicableNumbers(i, j) && j != i){
