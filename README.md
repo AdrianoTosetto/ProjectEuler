@@ -1,2 +1,2 @@
 # ProjectEuler
-Set of codes to solve some project euler problemas
+Set of codes to solve some project euler problems
